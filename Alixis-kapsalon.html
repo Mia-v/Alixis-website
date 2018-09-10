@@ -5,103 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alixis Hair Kapsalon</title>
   <link rel="shortcut icon" type="image/png" href="a-shortcut.png"/>
-  <link rel="stylesheet" type="text/css" href="Alixis-kapsalon.css" />
   <link href="https://fonts.googleapis.com/css?family=Cookie|Montserrat:400,800" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <!--<script src="Alixis-kapsalon.js"></script>-->
+  <link rel="stylesheet" type="text/css" href="Alixis-kapsalon.css" />
+  <!--<script>
+    window.onbeforeunload= function(){
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script src="Alixis-kapsalon.js" async></script>-->
 </head>
 
 <body>
-  <div class="screens" id='banner'>
+  <div class = "screens" id = 'banner'>
     <div class="contact">
       <ul>
         <address>
-        <li id="i1"><a href="tel:+31629339690">06 29 33 9690</a></li>
-        <li id="i2"><a href="mailto:alixishairkapsalon@gmail.com">alixishairkapsalon@gmail.com</a></li>
-        <li id="i3"><a href="https://maps.google.com/?q=Gasthuisstraat+20,+1335+XH+Almere" target="_blank">Gasthuisstraat 20<br/>1335 XH Almere</a></li>
-        <li id="i4"><span>Gratis parkeren</span> en op loopafstand van NS station Ostvaarders en Bushalte</li>
-      </address>
+          <li id="i1"><a href="tel:+31629339690">06 29 33 9690</a></li>
+          <li id="i2"><a href="mailto:alixishairkapsalon@gmail.com">alixishairkapsalon@gmail.com</a></li>
+          <li id="i3"><a href="https://maps.google.com/?q=Gasthuisstraat+20,+1335+XH+Almere" target="_blank">Gasthuisstraat 20<br/>1335 XH Almere</a></li>
+          <li id="i4"><span>Gratis parkeren</span> en op loopafstand van NS station Ostvaarders en Bushalte</li>
+        </address>
       </ul>
     </div>
     <div id='banner-main'>
+      <button class="arrow-next" onclick="goNext()">next</button>
       <p id="alixis">Alixis</p>
       <p id="hairkapsalon">hair kapsalon</p>
       <p class="banner-text">Ervaren Dominicaanse thuiskapster gespicealiseerd in allerlei soorten haar (dames en heren), manicure en pedicure met gelnagellak. Gezellig, flexibel en goedkop uw haar laten doen onder het genot van een kopje koffie, thee of limonade.</p>
       <p class="banner-text"> &euro;5,- korting bij de tweede behandeling.</p>
+
     </div>
   </div>
-  <div class="screens" id= "behand">
+  <div class = "screens" id = "behand">
+    <button class="arrow-prev" onclick="goPrev()">prev</button>
     <div class="block">Behandelingen</div>
     <div id="price1">
-        <table>
-          <tr>
-            <th>Behandelingen prijsen</th>
-          </tr>
-          <tr>
-            <td>Knippen Dames</td>
-            <td>&euro;12,-</td>
-          </tr>
-          <tr>
-            <td>Knippen Heren</td>
-            <td>&euro;10,-</td>
-          </tr>
-          <tr>
-            <td>Knippen Kinderen</td>
-            <td>&euro; 8,-</td>
-          </tr>
-          <tr>
-            <td>Knippen F&ouml;hnen en Stijlen</td>
-            <td>&euro;17,-</td>
-          </tr>
-          <tr>
-            <td>Kleuren Uitgrooi</td>
-            <td>&euro;12,-</td>
-          </tr>
-          <tr>
-            <td>Kleuren Heel Haar</td>
-            <td>&euro;17,-</td>
-          </tr>
-          <tr>
-            <td>Highlights of Balayage</td>
-            <td>&euro;25,-</td>
-          </tr>
-        </table>
-        <image id="photo-price1" src="Alixis-kapsalon-1.jpg" alt="Alixis-kapsalon"></image>
-      </div>
+      <table>
+        <tr>
+          <th>Behandelingen prijsen</th>
+        </tr>
+        <tr>
+          <td>Knippen Dames</td>
+          <td>&euro;12,-</td>
+        </tr>
+        <tr>
+          <td>Knippen Heren</td>
+          <td>&euro;10,-</td>
+        </tr>
+        <tr>
+          <td>Knippen Kinderen</td>
+          <td>&euro; 8,-</td>
+        </tr>
+        <tr>
+          <td>Knippen F&ouml;hnen en Stijlen</td>
+          <td>&euro;17,-</td>
+        </tr>
+        <tr>
+          <td>Kleuren Uitgrooi</td>
+          <td>&euro;12,-</td>
+        </tr>
+        <tr>
+          <td>Kleuren Heel Haar</td>
+          <td>&euro;17,-</td>
+        </tr>
+        <tr>
+          <td>Highlights of Balayage</td>
+          <td>&euro;25,-</td>
+        </tr>
+      </table>
+      <img id="photo-price1" src="Alixis-kapsalon-1.jpg" alt="Alixis-kapsalon"/>
+    </div>
     <div id='price2'>
-        <image id="photo-price2" src="Alixis-kapsalon-2.jpg" alt="Alixis-kapsalon"></image>
-        <table>
-          <tr>
-            <th>Speciale behandeling</th>
-          </tr>
-          <tr>
-            <td>Permanent en Knippen</td>
-            <td>&euro;45,-</td>
-          </tr>
-          <tr>
-            <td>Keratine behandeling vanaf</td>
-            <td>&euro;50,-</td>
-          </tr>
-          <tr>
-            <td>Enzyme therapie vanaf</td>
-            <td>&euro;100,-</td>
-          </tr>
-          <tr>
-            <td>Extension met micro ringen vanaf</td>
-            <td>&euro;35,-</td>
-          </tr>
-          <tr>
-            <td>Wenkbrauw epileren</td>
-            <td>&euro;5,-</td>
-          </tr>
-          <tr>
-            <td>Manicure en Pedicure met of zonder gelnagellak</td>
-            <td>&euro;12,-</td>
-          </tr>
-        </table>
-      </div>
+      <img id="photo-price2" src="Alixis-kapsalon-2.jpg" alt="Alixis-kapsalon"/>
+      <table>
+        <tr>
+          <th>Speciale behandeling</th>
+        </tr>
+        <tr>
+          <td>Permanent en Knippen</td>
+          <td>&euro;45,-</td>
+        </tr>
+        <tr>
+          <td>Keratine behandeling vanaf</td>
+          <td>&euro;50,-</td>
+        </tr>
+        <tr>
+          <td>Enzyme therapie vanaf</td>
+          <td>&euro;100,-</td>
+        </tr>
+        <tr>
+          <td>Extension met micro ringen vanaf</td>
+          <td>&euro;35,-</td>
+        </tr>
+        <tr>
+          <td>Wenkbrauw epileren</td>
+          <td>&euro;5,-</td>
+        </tr>
+        <tr>
+          <td>Manicure en Pedicure met of zonder gelnagellak</td>
+          <td>&euro;12,-</td>
+        </tr>
+      </table>
+    </div>
+    <button class="arrow-next" onclick="goNext()">next</button>
   </div>
-  <div class="screens" id="third">
+  <div class = "screens" id = "third">
+    <button class="arrow-prev" onclick="goPrev()">prev</button>
     <div>
       <div class="block">Openingstijden</div>
       <p id="open-hours">U kunt de hele week door bij mij terecht, echter uitstuitend op afspraak.</p>
@@ -109,7 +119,7 @@
     <div id="last">
       <div id="overmij">
         <div class="block">Over mij</div>
-        <img id="alixisPhoto" src="Alixis-kapsalon-3.jpg"></img>
+        <img id="alixisPhoto" src="Alixis-kapsalon-3.jpg"/>
         <div id="text-overmij">Mijn naam is Alixi. Ik hou van het werken met mensen, om van iedere bezoeker zijn of haar verhaal te horen en te onthouden is iets wat ik heel erg belangrijk en leuk vind.</div>
       </div>
       <div id='contact-down'>
@@ -125,7 +135,13 @@
           </ul>
         </div>
       </div>
+      <div id = "footer" >
+        <div id = "kvk">KVK 51720280 &nbsp;&nbsp;&nbsp; Vestigingsnr.000021712328</div>
+      </div>
     </div>
+
   </div>
+
 </body>
+
 </html>

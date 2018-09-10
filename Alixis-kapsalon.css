@@ -2,22 +2,27 @@ html {
   box-sizing: border-box;
   background-color: #f3e2e8;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
   min-width: 1366px;
 }
 
-
-body{
+body {
+  width:100%;
+  /*overflow: hidden;*/
+  -ms-overflow-style: auto;
   margin: 0;
-  overflow-x: hidden;
 }
 
-/*.screens{
+.screens {
   height: 100vh;
-*/
+  width:100%;
+}
 
 #banner {
   display: block;
-  width: 100%;
+  /*width: 100%;*/
   height: 100vh;
   min-height: 900px;
   margin: auto;
@@ -33,43 +38,60 @@ body{
 
 @media screen and (max-width: 600px) {
   #banner {
-     height: auto;
- }
+    height: auto;
+  }
+  html {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1024px) {
   #banner {
     height: 400px;
- }
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1360px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 .contact {
-    display: inline-block;
-    width: 400px;
-    padding-right: 30px;
-    padding-top: 15px;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: -125px;
-    padding-bottom: 10px;
+  display: inline-block;
+  width: 20rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: -2rem;
+  /*padding-bottom: 0.7rem;*/
 }
 address {
   text-decoration:none;
   font-style: normal;
 }
-
 ul {
   list-style: none;
   padding: 0;
 }
 
 li{
-    padding: 10px;
+  padding: 0.5rem;
 }
 
 li:before {
   display: inline-block;
-  margin-left: -1.3em;
-  width: 1.3em;
+  margin-left: -1.3rem;
+  width: 1.3rem;
   list-style-position: inside;
   font-family: FontAwesome;
 }
@@ -92,7 +114,7 @@ li#i4:before {
 
 
 p{
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 
 span{
@@ -102,42 +124,39 @@ span{
 #banner-main{
   display: block;
   position: relative;
-  margin-top: -100px;
+  margin-top: -5rem;
   text-align: center;
   /*min-width: 100px;*/
 }
 
 #alixis{
-  font-size: 200px;
+  font-size: 10rem;
   font-family: 'Cookie', cursive;
-  margin-top: 165px;
-  margin-bottom: -100px;
+  margin-top: 8.5rem;
+  margin-bottom: -5rem;
 }
 #hairkapsalon{
-  font-size: 45px;
+  font-size: 2.25rem;
 }
 
 .banner-text{
   text-align: center;
   width: 45%;
   font-family: 'Cookie', cursive;
-  font-size: 40px;
+  font-size: 2rem;
   margin:  auto;
-  padding-bottom: 25px;
+  padding-bottom: 1.2rem;
+  /*text-indent: 1.5rem;*/
 }
-
-/*#behand{
-  height: 100vh;
-}*/
-
 .block{
-  margin-bottom: 35px;
-  margin-top: 25px;
-  padding-top: 35px;
+  margin-bottom: 1.2rem;
+  margin-top: 0.7rem;
+  padding-top: 2rem;
   text-align: center;
   font-family: 'Cookie', cursive;
-  font-size: 50px;
+  font-size: 2.5rem;
 }
+
 
 table {
   /* width: 30%; */
@@ -146,22 +165,21 @@ table {
 }
 
 th{
-  height: 50px;
-  font-size: 22px;
-  /*font-weight: bold;*/
+  height: 2.5rem;
+  font-size: 1.1rem;
   text-align: left;
-  padding: 15px;
+  padding: 0.7rem 1rem 0.7rem 1rem;
 }
 td{
-  padding: 10px;
-  font-size: 20px;
+  padding: 0.4rem;
+  font-size: 1rem;
 }
 
 #price1{
   width: 80%;
   margin-left: 10%;
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
 
@@ -172,22 +190,22 @@ td{
 }
 
 img{
-  width: 38%;
+  width: 35%;
   height: auto;
-  min-width:  300px;
+  min-width: 15rem;
   border: 3px solid #f8bac5;
 }
 
 #photo-price1{
   float: right;
   margin-right: 10%;
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 #photo-price2{
   float: left;
   margin-left: 10%;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 #price1 table {
@@ -197,27 +215,23 @@ img{
 }
 
 #price2 table {
-  padding-right: 30px;
+  padding-right: 0px;
   width: 45%;
-  padding-left: 70px;
+  padding-left: 7rem;
 }
-
-/*#third{
-  height: 100vh;
-}*/
-
 #open-hours{
   text-align: center;
-  margin-bottom: 100px;
-  font-size: 20px;
+  margin-bottom: 5rem;
+  font-size: 1.1rem;
 }
 
 #last{
   display: inline-block;
   width: 100%;
+  height: 65vh;
   padding-bottom: 0px;
+  padding-top: 5rem;
   margin-bottom: 0px;
-  box-sizing: border-box;
   background-image: url(Alixis-kapsalon-banner-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,8 +240,18 @@ img{
 }
 
 #last .block{
-  margin-top: 0px;
+  margin-top: 0rem;
 }
+#kvk{
+  padding-top: 25rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 5rem;
+  margin-left: 5rem;
+  font-size: 0.9rem;
+}
+
 #overmij .block{
   width: 75%;
 }
@@ -235,17 +259,17 @@ img{
   display: inline-block;
   float: left;
   width: 45%;
-  font-size: 20px;
+  font-size: 1rem;
   margin-left: 15%;
   margin-right: 0;
 }
 
 #alixisPhoto{
-    float: left;
-    width: 35%;
-    height: auto;
-    margin-bottom: 70px;
-    min-width: 150px;
+  float: left;
+  width: 35%;
+  height: auto;
+  margin-bottom: 3.3rem;
+  min-width: 11.5rem;
 }
 
 
@@ -254,12 +278,13 @@ img{
   width: 35%;
   /*float:  right;*/
   text-align: left;
-  padding-left: 35px;
-  text-indent: 30px;
+  padding-left: 1.5rem;
+  text-indent: 1.5rem;
+  padding-top: 1rem;
 }
 
 #contact-down .block{
-  margin-right: 300px;
+  margin-right: 15rem;
   margin-bottom: 0px;
 }
 #contact-down{
@@ -269,10 +294,10 @@ img{
   margin-right: 5%;
 }
 a:link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 a:visited {
-    text-decoration: none;
-    color:inherit;
+  text-decoration: none;
+  color:inherit;
 }
