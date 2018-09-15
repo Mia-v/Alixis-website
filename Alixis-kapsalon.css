@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   background-color: #f3e2e8;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0px;
   padding: 0px;
   min-width: 1366px;
@@ -10,21 +10,22 @@ html {
 
 body {
   width:100%;
-  /*overflow: hidden;*/
-  -ms-overflow-style: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: hidden;
   margin: 0;
 }
 
 .screens {
-  height: 100vh;
+  display: block;
   width:100%;
+  box-sizing: border-box;
 }
 
 #banner {
   display: block;
-  /*width: 100%;*/
+  width: 100%;
   height: 100vh;
-  min-height: 900px;
+  min-height: 700px;
   margin: auto;
   background-image: url(Alixis-kapsalon-banner.jpg);
   background-repeat: no-repeat;
@@ -39,26 +40,26 @@ body {
 @media screen and (max-width: 600px) {
   #banner {
     height: auto;
+    min-height: 400px;
   }
+
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
+
 @media screen and (max-width: 1024px) {
-  #banner {
-    height: 400px;
-  }
-
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1440px) {
   html {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1024px) {
   html {
     font-size: 16px;
@@ -70,15 +71,16 @@ body {
   width: 20rem;
   padding-right: 2rem;
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: left;
   margin-bottom: -2rem;
-  /*padding-bottom: 0.7rem;*/
 }
+
 address {
   text-decoration:none;
   font-style: normal;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -112,7 +114,6 @@ li#i4:before {
   content: "\f129";
 }
 
-
 p{
   padding-left: 1rem;
 }
@@ -126,17 +127,19 @@ span{
   position: relative;
   margin-top: -5rem;
   text-align: center;
-  /*min-width: 100px;*/
 }
 
 #alixis{
-  font-size: 10rem;
+  font-size: 9rem;
   font-family: 'Cookie', cursive;
   margin-top: 8.5rem;
   margin-bottom: -5rem;
 }
+
 #hairkapsalon{
   font-size: 2.25rem;
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
 }
 
 .banner-text{
@@ -146,32 +149,32 @@ span{
   font-size: 2rem;
   margin:  auto;
   padding-bottom: 1.2rem;
-  /*text-indent: 1.5rem;*/
+  padding-top: 0em;
 }
+
 .block{
-  margin-bottom: 1.2rem;
-  margin-top: 0.7rem;
-  padding-top: 2rem;
+  margin-bottom: 1em;
+  margin-top: 0.7em;
+  padding-top: 1em;
   text-align: center;
   font-family: 'Cookie', cursive;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
-
 table {
-  /* width: 30%; */
   text-align: left;
   min-width: 400px;
 }
 
 th{
-  height: 2.5rem;
+  height: 2.5em;
   font-size: 1.1rem;
   text-align: left;
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.7em 1em 0.7em 1em;
 }
+
 td{
-  padding: 0.4rem;
+  padding: 0.4em;
   font-size: 1rem;
 }
 
@@ -179,9 +182,8 @@ td{
   width: 80%;
   margin-left: 10%;
   display: inline-block;
-  padding-bottom: 35px;
+  padding-bottom: 2em;
 }
-
 
 #price2{
   width: 80%;
@@ -205,7 +207,7 @@ img{
 #photo-price2{
   float: left;
   margin-left: 10%;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #price1 table {
@@ -215,10 +217,11 @@ img{
 }
 
 #price2 table {
-  padding-right: 0px;
+  padding-right: 0;
   width: 45%;
-  padding-left: 7rem;
+  padding-left: 7em;
 }
+
 #open-hours{
   text-align: center;
   margin-bottom: 5rem;
@@ -228,10 +231,9 @@ img{
 #last{
   display: inline-block;
   width: 100%;
-  height: 65vh;
-  padding-bottom: 0px;
-  padding-top: 5rem;
-  margin-bottom: 0px;
+  padding-bottom: 0;
+  padding-top: 1em;
+  margin-bottom: 0;
   background-image: url(Alixis-kapsalon-banner-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,19 +244,11 @@ img{
 #last .block{
   margin-top: 0rem;
 }
-#kvk{
-  padding-top: 25rem;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  height: 5rem;
-  margin-left: 5rem;
-  font-size: 0.9rem;
-}
 
 #overmij .block{
   width: 75%;
 }
+
 #overmij{
   display: inline-block;
   float: left;
@@ -272,11 +266,9 @@ img{
   min-width: 11.5rem;
 }
 
-
 #text-overmij{
   display:inline-block;
   width: 35%;
-  /*float:  right;*/
   text-align: left;
   padding-left: 1.5rem;
   text-indent: 1.5rem;
@@ -285,18 +277,21 @@ img{
 
 #contact-down .block{
   margin-right: 15rem;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
 #contact-down{
   display: inline-block;
   width: 35%;
   float: right;
   margin-right: 5%;
 }
+
 a:link {
   text-decoration: none;
   color: black;
 }
+
 a:visited {
   text-decoration: none;
   color:inherit;
